@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>
+            Console App
+        </title>
+        <style>
+            body
+            {
+                text-align:center;
+                background-image: url("backg1.jpg");
+                background-size: cover;
+                background-position: center;
+                color:white;
+            }
+            #lightbulb
+            {
+                width:250px;
+                height:500px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            <b>
+            Console Screen
+            </b>
+        </h1>
+        <hr>
+        <h3>
+            Visual Studio Code is a streamlined code editor with support for development operations
+              like debugging, task running, and version control. It aims to provide just the tools
+               a developer needs for a quick code-build-debug cycle
+             and leaves more complex workflows to fuller featured IDEs, such as Visual Studio IDE.
+        </h3>
+        <br>
+        <h3>
+            The console. log() method in HTML is used for writing a message in the console.
+             It indicates an important message during testing of any program.
+             The message is sent as a parameter to the console. log() method.
+        </h3>
+        <br>
+        <br>
+        <img src = "off.png" onmouseover = "On()" onmouseleave= "Off()" id = "lightbulb">
+        <audio src = "Electrical-Welding-Metal-Short.mp3" id = "e"></audio>
+        <script>
+            var first_name = "Ranbir";
+            console.log(first_name);
+            var last_name = "Kapoor";
+            console.log(last_name);
+            var full_name = first_name.concat(last_name);
+            console.log(full_name);
+            var a = 10;
+            var b = 5;
+            console.log(a);
+            console.log(b);
+            var c = a + b;
+            console.log(c);
+            var d = a - b;
+            console.log(d);
+            var e = a * b;
+            console.log(e);
+            var f = a / b;
+            console.log(f);
+            var g = Math.sqrt(a);
+            var h = Math.sqrt(b);
+            console.log(g);
+            console.log(h);
+            var electricity = document.getElementById("e");
+            function On()
+            {
+                document.getElementById("lightbulb").src = "on.png";
+                electricity.play();
+            }
+            function Off()
+            {
+                document.getElementById("lightbulb").src = "off.png";
+                electricity.play();
+            }
+        </script>
+    </body>
+</html>
